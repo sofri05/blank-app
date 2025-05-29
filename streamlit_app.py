@@ -14,7 +14,7 @@ import seaborn as sns
 import numpy as np
 
 # Cargar modelo entrenado
-model = joblib.load(""modelo_arbol_decision_optimizado.pkl"")  # Asegúrate de que este archivo esté en el mismo directorio
+model = joblib.load("modelo_arbol_decision_optimizado.pkl")  # Asegúrate de que este archivo esté en el mismo directorio
 
 # Título
 title = "Predicción de Alzheimer - Dashboard POC"

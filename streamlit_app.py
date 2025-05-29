@@ -14,7 +14,7 @@ import seaborn as sns
 import numpy as np
 
 # Cargar modelo entrenado
-model = joblib.load("modelo_final_dt.joblib")  # Asegúrate de que este archivo esté en el mismo directorio
+model = joblib.load(""modelo_arbol_decision_optimizado.pkl"")  # Asegúrate de que este archivo esté en el mismo directorio
 
 # Título
 title = "Predicción de Alzheimer - Dashboard POC"
@@ -30,7 +30,7 @@ Este dashboard permite cargar un archivo CSV con características clínicas de p
 """)
 
 # Subir archivo
-file = st.file_uploader("Sube tu archivo CSV", type=["csv"])
+file = st.file_uploader("/content/drive/MyDrive/MACHINE LEARNING/alzheimers_disease_data.csv", type=["csv"])
 
 if file:
     data = pd.read_csv(file)
